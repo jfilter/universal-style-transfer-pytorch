@@ -1,17 +1,18 @@
-import os
-import torch
 import argparse
-from PIL import Image
-from torch.autograd import Variable
-import torchvision.utils as vutils
-import torchvision.datasets as datasets
-from Loader import Dataset
-from util import *
-import scipy.misc
-from torch.utils.serialization import load_lua
+import os
 import time
 
+from PIL import Image
+
 import io_util
+import scipy.misc
+import torch
+import torchvision.datasets as datasets
+import torchvision.utils as vutils
+from Loader import Dataset
+from torch.autograd import Variable
+from torch.utils.serialization import load_lua
+from util import *
 
 parser = argparse.ArgumentParser(description='WCT Pytorch')
 parser.add_argument(

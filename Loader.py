@@ -1,15 +1,17 @@
-from PIL import Image
-import torchvision.transforms as transforms
-import torchvision.utils as vutils
-import torch.utils.data as data
+import os
 from os import listdir
 from os.path import join
+
+from PIL import Image
+
 import numpy as np
 import torch
-import os
 import torch.nn as nn
+import torch.utils.data as data
+import torchvision.transforms as transforms
+import torchvision.utils as vutils
 from torch.autograd import Variable
-import numpy as np
+
 
 def is_image_file(filename):
     return any(filename.endswith(extension) for extension in [".png", ".jpg", ".jpeg"])
