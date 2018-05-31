@@ -1,6 +1,5 @@
 *.pyc
 models
 samples
-images/style
-images/content
+images
 .vscode
