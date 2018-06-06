@@ -23,6 +23,7 @@ Put content and image pairs in `images/content` and `images/style` respectively.
 ## Usage
 
 ```
+./setup.sh
 pipenv run python WCT.py --cuda
 ```
 
